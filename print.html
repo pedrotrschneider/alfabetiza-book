@@ -304,7 +304,11 @@
 <p><img src="documentation/configuring/building/desktop/assets/18-desktop-select-path.png" alt="Imagem Faltando" /></p>
 <p>Se tudo correr bem, haverá um executável (<code>.x86_64</code> para Linux, ou <code>.exe</code> para Windows) na pasta que foi selecionada durante o processo.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="exportando-para-android"><a class="header" href="#exportando-para-android">Exportando para Android</a></h1>
-<p>Instruções de exportação para Android em breve</p>
+<p>Primeiro, é necessário instalar as dependências do sistema de build Android no computador. Para isso, siga os passos na <a href="https://docs.godotengine.org/pt_BR/latest/tutorials/export/exporting_for_android.html">documentação oficial da Godot</a>.</p>
+<p>Depois de seguir todos os passos como descrito, será possível exportar para Android seguindo os mesmos passos que para qualquer outra plataforma:</p>
+<pre><code>Project Settings &gt; Export... &gt; Android &gt; Export Project
+</code></pre>
+<p>Note que para exportar para Android em modo release, é preciso gerar em um segundo keystore file e adicionar no export template, como descrito na documentação da Godot.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="modificando-o-projeto"><a class="header" href="#modificando-o-projeto">Modificando o projeto</a></h1>
 <p>Na grande maioria das vezes, as únicas modificações que o projeto requerem são relacionadas à exportação das diferentes versões do jogo. Se este for o caso, todas as configurações podem ser facilmente acessadas a partir da tela inicial da Godot, logo após abrir o projeto.</p>
 <ol>
